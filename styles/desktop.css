@@ -1,0 +1,242 @@
+body {
+  color: white;
+  background-color: #070D0D;
+  font-family: 'Sono', sans-serif;
+  position: relative;
+}
+
+/* header */
+
+#headerBar {
+  background-color: #070D0D;
+  width: 100%;
+  height: 120px;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  grid-area: a;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#headerBar a {
+  text-decoration: none;
+}
+
+h1 {
+  color: white;
+  filter: drop-shadow(0px 0px 10px #3BFFF8);
+  text-align: center;
+  font-family: 'Silkscreen', cursive;
+  font-size: 2.875em;
+  margin-top: 25px;
+}
+
+h1:hover, h1:active {
+  filter: drop-shadow(0px 0px 10px #FF2A6D);
+}
+
+/* navigation */
+
+nav {
+  position: fixed;
+  top: 120px;
+  left: -2px;
+  width: 100%;
+  height: 85px;
+  display: flex;
+	justify-content: center;
+  background-color: #1C1C1C;
+  border: 2px solid #FF2A6D;
+  filter: drop-shadow(0px 0px 5px #FF2A6D);
+  z-index: 100;
+}
+
+.button {
+	background-color: #070D0D;
+  border: 1px solid #3BFFF8;
+  box-shadow: inset 0 0 5px #3BFFF8;
+	height: 50px;
+	width: 300px;
+  margin: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h2 {
+  font-size: 0.9375em;
+  font-family: 'Sono', sans-serif;
+  text-align: center;
+  margin: 15px;
+}
+
+.button a:link, .button a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+.button a:hover, .button a:active {
+  color: #FF2A6D;
+  filter: drop-shadow(0px 0px 5px #FF2A6D);
+  text-decoration: none;
+}
+
+/* main content */
+
+.content {
+  position: absolute;
+  top: 220px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 75px auto auto;
+  grid-template-areas:
+  "a a"
+  "b b"
+  "c d";
+}
+
+.intro {
+  grid-area: a;
+  text-align: center;
+}
+
+.mainContent {
+  grid-area: b;
+  display: flex;
+  justify-content: center;
+	flex-wrap: wrap;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 20px;
+}
+
+h3 {
+  font-family: 'Silkscreen', cursive;
+  font-size: 1.875em;
+}
+
+h4 {
+  font-family: 'Silkscreen', cursive;
+  font-size: 1.75em;
+}
+
+h5 {
+  font-size: 0.75em;
+}
+
+p {
+  font-size: 1em;
+}
+
+h5 a:link, h5 a:visited, a:link, a:visited {
+  color: #3BFFF8;
+}
+
+h5 a:hover, h5 a:active, a:hover, a:active{
+  color: #FF2A6D;
+  filter: drop-shadow(0px 0px 5px #FF2A6D);
+}
+
+/* homepage */
+
+#homeImg {
+  width: 48%;
+  margin-top: 5px;
+}
+
+#homeImg img {
+  width: 100%;
+}
+
+#homeImg h5 {
+  padding-top: 0px;
+}
+
+#homeText {
+  padding-left: 20px;
+  width: 48%;
+  line-height: 150%;
+  color: #DBDBDB;
+}
+
+/* other pages */
+
+.subsection {
+	width:30%;
+	background-color: #070D0D;
+  border: 1px solid #3BFFF8;
+  box-shadow: inset 0 0 5px #3BFFF8;
+	padding: 10px;
+  margin: 5px;
+  position: relative;
+}
+
+.subsection img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.subsection h4 {
+  padding-top: 20px;
+}
+
+.subsection h5 a {
+  position: absolute;
+  top: 270px;
+}
+
+.subsection p {
+  line-height: 150%;
+}
+
+.subsection h4, .subsection h5, .subsection p {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+/* footer */
+
+hr {
+  margin: 0px;
+  height: 2px;
+  background-color: #FF2A6D;
+  border: 0.5px solid #FF2A6D;
+  filter: drop-shadow(0px 0px 10px #FF2A6D);
+}
+
+.footerA {
+  grid-area: c;
+}
+
+.footerA p {
+  text-align: left;
+  padding-left: 30px;
+  position: relative;
+}
+
+.aContent {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+
+.footerB {
+  grid-area: d;
+}
+
+.footerB p {
+  text-align: right;
+  padding-right: 30px;
+  position: relative;
+}
+
+.bContent {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}

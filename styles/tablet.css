@@ -1,0 +1,55 @@
+@import "desktop.css";
+
+h1 {
+  font-size: 2.4em;
+}
+
+h2 {
+  font-size: 0.8em;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+h4 {
+  font-size: 1.4em;
+}
+
+h5 {
+  font-size: 0.6em;
+}
+
+p {
+  font-size: 0.8em;
+}
+
+nav {
+  height: 105px;
+}
+
+.button {
+	height: 70px;
+}
+
+#homeImg {
+  width: 98%;
+}
+
+#homeText {
+  padding-left: 0px;
+  width: 98%;
+}
+
+.subsection {
+	width: 43%;
+}
+
+.aContent {
+  position: absolute;
+  bottom: 20px;
+}
+.bContent {
+  position: absolute;
+  bottom: 20px;
+}
